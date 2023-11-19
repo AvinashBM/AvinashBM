@@ -1,0 +1,11 @@
+Data types: what type of data you want your warehouse to store
+
+Scale: the amount of data you plan to store
+
+Performance: how quickly you need your data when you query it
+
+Maintenance: how much engineering effort you're willing and able to dedicate to your warehouse
+
+Cost: how much you are willing to spend on your data warehouse
+
+Community: how connected your warehouse is to other critical tools and services

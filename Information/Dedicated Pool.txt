@@ -1,0 +1,18 @@
+Three resources CPU, memory, and IO are bundled into units of compute scale called Data Warehouse Units (DWUs). A DWU represents an abstract, normalized measure of compute resources and performance.
+Dedicated SQL pool (formerly SQL DW) is a scale-out system that can provision vast amounts of compute and query sizeable quantities of data.
+DW Capacity limits
+1.	Max DWU for a single dedicated SQL pool - Gen1: DW6000, Gen2: DW30000c
+2.	Maximum Concurrent open sessions – 1024 (DWU1000c) and 512 (DWU500c)
+3.	Maximum memory for prepared statements – 20MB
+4.	Maximum concurrent queries – 128
+5.	Maximum GB for tempdb – 399GB to 3.99TB
+6.	Database Max size – 240TB, on Clustered columnstore compression is estimated at 5X can store 1PB
+7.	Table Max size – 60TB
+8.	Tables per DB – 100000
+9.	Column per table – 1024
+10.	Bytes per column - Limit is 8000 for char data types, 4000 for nvarchar, or 2 GB for MAX data types.
+11.	Bytes per row, defined size - 8060 bytes
+12.	Partitions per table - 15,000
+13.	Characters per partition boundary value – 4000
+Below link have further details on the indexes, metadata, queries, load, procedure and statistics information.
+https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-service-capacity-limits#workload-management

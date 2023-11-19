@@ -1,0 +1,51 @@
+Limitation  - Need Clarity
+Azure Documentiton - To be checked for all aspects
+External Data Table - Not Tested
+
+Plan
+----
+Replicate one of the Executive Dashboard Tile for SWAP Table
+
+Design Plan
+-----------
+1. Python script to extraction Postgres DB table data to DataLake
+	Use : SWAP TABLE DATA, MASTER Data from Primary and Secondary
+2. Python Script or OPENROWSET to Normalize the JSON DATA ((Text - String - Concat) and Push Data to Process Container of DataLake/Lake House
+	Use : Python Script for Phase1
+3. Normalized data pushed to RAW_DB No Aggregation
+	Use : ETL + Synapse Script (optional)
+4. Push Aggregated Data to Processed_DB (Reporting DB)
+	Use : ETL + Synapse Scripts 
+5. Accessing the Processed_DB using PowerBI
+
+Synapse Components/Services Needed
+----------------------------------
+Pipeline
+Data Lake Storage Gen 2
+Lake House/Lake Database
+Python Script to download and transform JSON data
+
+Input
+-----
+DATA in form of parquet format
+1. Multiple file 
+2. Single huge file 
+
+Test Data 
+---------
+Executive Dashboard
+Swap Records Tables - 3 Months of data
+
+Stages of processing
+-------------------
+1. Load Testing - Effective and quick runner based on data volume
+	a. One huge file to read and processed
+	b. Multiple files to be read and processed
+2. Data Flow Design - optimize
+3. JSON conversion check
+
+
+
+
+Price Factor
+Power BI - Data SOurce connector is available

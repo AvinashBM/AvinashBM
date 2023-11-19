@@ -1,0 +1,17 @@
+ADLS - smpipeline - Access Key
+
+SrVxN/70Y6uiktX9XUIqypMiUaNy9yrh4DyRFcAd7+JueTmRFrKl5yThuNQhwfV3XisEfzEJSeQl+AStK0SDpg==
+
+ScopeForStorage
+
+https://akvdatabricksadls.vault.azure.net/
+
+/subscriptions/f7acba35-ffeb-4b89-ab2b-54696e5429a6/resourceGroups/rg-sm-DatawareHouseTesting/providers/Microsoft.KeyVault/vaults/akvDatabricksAdls
+
+dbutils.secrets.get('ScopeForStorage','adlssmpipeline')
+
+spark.conf.set("fs.azure.account.key.smpipeline.dfs.core.windows.net","SrVxN/70Y6uiktX9XUIqypMiUaNy9yrh4DyRFcAd7+JueTmRFrKl5yThuNQhwfV3XisEfzEJSeQl+AStK0SDpg==")
+
+path='abfss://<container>@<stroragename>.dfs.core.windows.net/aa/bb.csv
+
+(path=energy-billing-poc@smpipelinedata.dfs.core.windows.net/raw/sm_stations.parquet,header=True)

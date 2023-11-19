@@ -1,0 +1,28 @@
+BP 
+SwAp - Cycle
+CCD
+DCD
+
+--> Cell Temp <> Anbient Temp
+
+ADF --> Data Ingestion, Transformation
+
+DataLake --> Storage - DW
+Archival 
+
+Relationship - DM
+Reporting Acc
+
+Analytics
+Data Governance
+
+Denormalize for DM
+
+Ex: Executive Dashboard
+
+Battery Live - Parquet File
+
+Pipeline --> Priyankith SOwmya
+(Function App) - JSON
+
+Executive + Vehicle  --> Start working with it

@@ -1,0 +1,27 @@
+###########################################################
+MAIN REQUIREMENT
+###########################################################
+
+Swap records 6 months --> Generate files 
+Datalake --> Report PowerBI
+Current time 12 months 
+Dynamic date range 
+Setup DataMart -- Exponential Increase
+
+###########################################################
+Pilot Project Steps: 	
+###########################################################
+
+Create the Storage Account: smdevswaptest
+Resource Group : rg-sm-centralindia
+Container Name: postgres-dump
+
+Data Factory : smpostgres-to-datalake (Data factory (V2))
+
+Range of information: 1 month Swap data to be dumped with the standard naming format
+Files to be created: CSV, JSON, PARQUET
+
+
+iyerkarthik1991@gmail.com
+Postliking1991
+
